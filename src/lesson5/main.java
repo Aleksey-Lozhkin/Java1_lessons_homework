@@ -2,9 +2,7 @@ package lesson5;
 
 public class main {
 
-    // 6.	* Создать метод, повышающий зарплату всем сотрудникам старше 45 лет на 5000.
-    // Метод должен принимать в качестве параметра массив сотрудников.
-    // Вывести в main() возраст и зарплату сотрудника до и после вызова метода;
+    //Сделано
     private static void increaser(Employee[] emp, byte age, float increment){
         for (int i = 0; i < emp.length; i++) {
             if (emp[i].getAge() > age) {
@@ -14,9 +12,6 @@ public class main {
         }
     }
 
-    // 7.	** Написать методы (принимающие на вход массив сотрудников),
-    // вычисляющие средний возраст и среднюю зарплату сотрудников,
-    // вывести результаты работы в консоль.
     private static float averageSalary(Employee[] emp){
         float result = 0;
         for (int i = 0; i < emp.length; i++)
@@ -34,8 +29,7 @@ public class main {
     }
 
     public static void main(String[] args) {
-        // 1.	Создать класс "Сотрудник" с полями: ФИО, должность, телефон,
-        // зарплата, возраст;
+
         Employee e = new Employee("Aleksey", "Ivanovich",
                 "Lozhkin", "8(495)000-11-22",
                 "developer", 80000, 1989);
@@ -44,8 +38,7 @@ public class main {
         System.out.println("Please welcome our " + e.getPosition() + ", " +
                 e.getName() + " " + e.getSecondName() + " " + e.getSurname() + ".");
 
-        // 5.	Создать массив из 5 сотрудников. С помощью цикла вывести
-        // информацию только о сотрудниках старше 40 лет;
+
 
         Employee[] employees = {
                 e,
@@ -96,7 +89,6 @@ public class main {
         private static int id = 0;
         public int uid;
 
-        // 2.	Конструктор класса должен заполнять эти поля при создании объекта;
         Employee (String name,
                   String secondName,
                   String surname,
