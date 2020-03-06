@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 class KrestikiNoliki {
 
+    //сделано
     private static final char DOT_HUMAN = 'X';
     private static final char DOT_AI = 'O';
     private static final char DOT_EMPTY = '.';
